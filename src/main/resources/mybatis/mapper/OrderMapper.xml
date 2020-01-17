@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vw.rent.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.vw.rent.entity.Order">
+        <id column="order_id" property="orderId" />
+        <result column="token" property="token" />
+        <result column="mobile" property="mobile" />
+        <result column="order_no" property="orderNo" />
+        <result column="main_order_no" property="mainOrderNo" />
+        <result column="is_multiple" property="isMultiple" />
+        <result column="order_type" property="orderType" />
+        <result column="img" property="img" />
+        <result column="other_pay_no" property="otherPayNo" />
+        <result column="amount" property="amount" />
+        <result column="pay_type" property="payType" />
+        <result column="num" property="num" />
+        <result column="off_code" property="offCode" />
+        <result column="refund_msg" property="refundMsg" />
+        <result column="refund_server" property="refundServer" />
+        <result column="refund_price" property="refundPrice" />
+        <result column="openid" property="openid" />
+        <result column="buyer_logon_id" property="buyerLogonId" />
+        <result column="order_status" property="orderStatus" />
+        <result column="pay_time" property="payTime" />
+        <result column="created_time" property="createdTime" />
+        <result column="updated_time" property="updatedTime" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+        <result column="dealer_code" property="dealerCode" />
+        <result column="v_time" property="vTime" />
+        <result column="name" property="name" />
+        <result column="card" property="card" />
+        <result column="coupon_id" property="couponId" />
+        <result column="pay_order_no" property="payOrderNo" />
+        <result column="shipping_address" property="shippingAddress" />
+        <result column="message" property="message" />
+        <result column="title" property="title" />
+        <result column="refunds" property="refunds" />
+        <result column="is_returngoods" property="isReturngoods" />
+        <result column="finance_id" property="financeId" />
+        <result column="return_time" property="returnTime" />
+        <result column="pac_p_acct" property="pacPAcct" />
+        <result column="is_prorate" property="isProrate" />
+        <result column="utm_source" property="utmSource" />
+        <result column="utm_medium" property="utmMedium" />
+        <result column="utm_term" property="utmTerm" />
+        <result column="utm_content" property="utmContent" />
+        <result column="utm_campaign" property="utmCampaign" />
+        <result column="delete_status" property="deleteStatus" />
+        <result column="end_time" property="endTime" />
+        <result column="activity_id" property="activityId" />
+        <result column="user_cutdown_id" property="userCutdownId" />
+        <result column="user_id" property="userId" />
+        <result column="used_activity_id" property="usedActivityId" />
+        <result column="production_time" property="productionTime" />
+        <result column="activity_id_parent" property="activityIdParent" />
+        <result column="used_push_status" property="usedPushStatus" />
+        <result column="ddmp_push" property="ddmpPush" />
+        <result column="ddmp_msg" property="ddmpMsg" />
+        <result column="is_retail" property="isRetail" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_id, token, mobile, order_no, main_order_no, is_multiple, order_type, img, other_pay_no, amount, pay_type, num, off_code, refund_msg, refund_server, refund_price, openid, buyer_logon_id, order_status, pay_time, created_time, updated_time, created_at, updated_at, dealer_code, v_time, name, card, coupon_id, pay_order_no, shipping_address, message, title, refunds, is_returngoods, finance_id, return_time, pac_p_acct, is_prorate, utm_source, utm_medium, utm_term, utm_content, utm_campaign, delete_status, end_time, activity_id, user_cutdown_id, user_id, used_activity_id, production_time, activity_id_parent, used_push_status, ddmp_push, ddmp_msg, is_retail
+    </sql>
+
+</mapper>

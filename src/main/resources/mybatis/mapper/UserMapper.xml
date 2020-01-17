@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vw.rent.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.vw.rent.entity.User">
+    <result column="id" property="id" />
+        <result column="token" property="token" />
+        <result column="access_token" property="accessToken" />
+        <result column="tel" property="tel" />
+        <result column="mail" property="mail" />
+        <result column="username" property="username" />
+        <result column="usercode" property="usercode" />
+        <result column="vw_uid" property="vwUid" />
+        <result column="vw_aid" property="vwAid" />
+        <result column="realname" property="realname" />
+        <result column="id_card_no" property="idCardNo" />
+        <result column="pwd" property="pwd" />
+        <result column="encrypt" property="encrypt" />
+        <result column="avatar" property="avatar" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="address" property="address" />
+        <result column="birthday" property="birthday" />
+        <result column="createdate" property="createdate" />
+        <result column="reg_type" property="regType" />
+        <result column="registdatafrom" property="registdatafrom" />
+        <result column="last_login_ip" property="lastLoginIp" />
+        <result column="last_login_date" property="lastLoginDate" />
+        <result column="iscertified" property="iscertified" />
+        <result column="reson" property="reson" />
+        <result column="approvaltime" property="approvaltime" />
+        <result column="approval" property="approval" />
+        <result column="certifiedtime" property="certifiedtime" />
+        <result column="idcardphoto" property="idcardphoto" />
+        <result column="sex" property="sex" />
+        <result column="age" property="age" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        token, access_token, tel, mail, username, usercode, vw_uid, vw_aid, realname, id_card_no, pwd, encrypt, avatar, province, city, address, birthday, createdate, reg_type, registdatafrom, last_login_ip, last_login_date, iscertified, reson, approvaltime, approval, certifiedtime, idcardphoto, sex, age
+    </sql>
+
+</mapper>

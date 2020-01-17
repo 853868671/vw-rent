@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="MysqlContext" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://47.94.15.141:3306/faw_vw"
+                        userId="faw_vw"
+                        password="fawvw@scfl">
+        </jdbcConnection>
+
+        <!-- 对于生成的pojo所在包 -->
+        <javaModelGenerator targetPackage="com.vw.rent.entity" targetProject="src/main/java"/>
+
+        <!-- 对于生成的mapper所在目录 -->
+        <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="src/main/resources"/>
+
+        <!-- 配置mapper对应的java映射 -->
+        <javaClientGenerator targetPackage="com.vw.rent.mapper" targetProject="src/main/java"
+                             type="XMLMAPPER"/>
+
+<!--        <table tableName="vw_user"-->
+<!--               domainObjectName="User" enableCountByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               enableUpdateByExample="false">-->
+<!--        </table>-->
+
+<!--        <table tableName="scfl_mid_year"-->
+<!--               domainObjectName="MidYear" enableCountByExample="false"-->
+<!--               enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               enableUpdateByExample="false">-->
+<!--        </table>-->
+        <!--<table tableName="vw_dictionary"-->
+               <!--domainObjectName="Dictionary" enableCountByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--enableUpdateByExample="false">-->
+        <!--</table>-->
+        <!--<table tableName="vw_dictionary_type"-->
+               <!--domainObjectName="DictionaryType" enableCountByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--enableUpdateByExample="false">-->
+        <!--</table>-->
+        <!--<table tableName="vw_order_rent"-->
+               <!--domainObjectName="OrderRent" enableCountByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--enableUpdateByExample="false">-->
+        <!--</table>-->
+        <!--<table tableName="vw_order_rent_new"-->
+               <!--domainObjectName="orderRentNew" enableCountByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--enableUpdateByExample="false">-->
+        <!--</table>-->
+
+
+
+    </context>
+</generatorConfiguration>
